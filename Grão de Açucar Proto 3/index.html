@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Grão de Açúcar · Confeitaria artesanal em Belo Horizonte</title>
+  <meta name="description" content="Bolos e doces artesanais sob encomenda em Santa Tereza, BH. Peça seu orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#FFF8EF">
+  <link rel="preload" as="image" href="img/hero.jpg">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#topo">Grão de Açúcar</a>
+      <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="menu-toggle__bar" aria-hidden="true"></span> Menu
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#como-encomendar">Como encomendar</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#onde">Onde estamos</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#orcamento">Pedir orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- TOPO -->
+    <section class="hero" id="topo" aria-labelledby="titulo-principal">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Confeitaria artesanal · Belo Horizonte</p>
+          <h1 id="titulo-principal">Bolos e doces para a sua <em>próxima comemoração</em></h1>
+          <p class="hero__lead">Conte a data, o que você procura e para quantas pessoas. A gente responde com os sabores disponíveis e o valor.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#orcamento">Pedir orçamento</a>
+            <a class="link-arrow" href="#cardapio">Ver cardápio</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>24h</strong> <span>para responder o orçamento</span></li>
+            <li><strong>Desde 2019</strong> <span>em Santa Tereza</span></li>
+            <li><strong>100%</strong> <span>sob encomenda</span></li>
+          </ul>
+        </div>
+        <figure class="hero__media">
+          <img src="img/hero.jpg" width="1200" height="1400" fetchpriority="high"
+               alt="Bolo de aniversário com cobertura de brigadeiro sobre a bancada do ateliê">
+          <figcaption class="hero__badge">Manteiga de verdade e chocolate 50% cacau</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="section section--rose" id="cardapio" aria-labelledby="titulo-cardapio">
+      <div class="container">
+        <h2 id="titulo-cardapio">Cardápio</h2>
+        <p class="section__intro">Tudo é feito sob encomenda. Os valores abaixo são de referência e o orçamento final depende do pedido.</p>
+        <ul class="menu-grid">
+          <li class="product">
+            <img src="img/bolos.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Bolo de chocolate com cobertura de brigadeiro">
+            <p class="tag">A partir de R$ 120</p>
+            <h3>Bolos</h3>
+            <p>Massa de baunilha ou chocolate. Recheios de brigadeiro, ninho com morango, doce de leite com nozes ou goiabada com queijo. Tamanhos de 15 a 40 fatias.</p>
+            <a class="product__action" href="#orcamento" data-categoria="Bolo de festa">Consultar sabores</a>
+          </li>
+          <li class="product">
+            <img src="img/docinhos.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Brigadeiros e beijinhos em forminhas">
+            <p class="tag">R$ 2,50 a unidade · mínimo de 50</p>
+            <h3>Docinhos</h3>
+            <p>Brigadeiro, beijinho, bicho-de-pé, cajuzinho e brigadeiro de pistache. Você pode misturar até quatro sabores.</p>
+            <a class="product__action" href="#orcamento" data-categoria="Docinhos">Consultar sabores</a>
+          </li>
+          <li class="product">
+            <img src="img/sobremesas.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Pudim de leite com calda de caramelo">
+            <p class="tag">A partir de R$ 75</p>
+            <h3>Sobremesas</h3>
+            <p>Pudim de leite, torta de limão, banoffee e pavê de chocolate. Formas para 8 a 12 porções.</p>
+            <a class="product__action" href="#orcamento" data-categoria="Sobremesas">Consultar sabores</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="container">
+        <h2 id="titulo-galeria">Pedidos que já fizemos</h2>
+        <ul class="gallery">
+          <li><img src="img/galeria-1.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Bolo de aniversário infantil com flores de chantilly"></li>
+          <li><img src="img/galeria-2.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Mesa de docinhos para casamento"></li>
+          <li><img src="img/galeria-3.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Bolo de ninho com morango cortado"></li>
+          <li><img src="img/galeria-4.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Caixa de brigadeiros de pistache"></li>
+          <li><img src="img/galeria-5.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Torta de limão com merengue maçaricado"></li>
+          <li><img src="img/galeria-6.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Bolo de chocolate em dois andares"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COMO ENCOMENDAR -->
+    <section class="section section--border" id="como-encomendar" aria-labelledby="t-como">
+      <div class="container">
+        <h2 id="t-como">Como encomendar</h2>
+        <ol class="steps">
+          <li><span class="steps__num">1</span><h3>Peça o orçamento</h3><p>Preencha o formulário ou chame no WhatsApp.</p></li>
+          <li><span class="steps__num">2</span><h3>Confirme o pedido</h3><p>Pague 50% de sinal para reservar a data.</p></li>
+          <li><span class="steps__num">3</span><h3>Retire ou receba</h3><p>Retirada no ateliê ou entrega em BH.</p></li>
+        </ol>
+        <a class="btn btn--primary" href="#orcamento">Começar meu pedido</a>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO -->
+    <section class="section section--rose" id="orcamento" aria-labelledby="t-orcamento">
+      <div class="container container--narrow">
+        <h2 id="t-orcamento">Peça seu orçamento</h2>
+        <p>Ao enviar, o WhatsApp abre com a mensagem pronta.</p>
+        <form class="quote" id="form-orcamento" novalidate>
+          <div class="field">
+            <label for="f-nome">Seu nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Maria Silva" required>
+          </div>
+          <div class="field">
+            <label for="f-produto">Produto</label>
+            <select id="f-produto" name="produto" required>
+              <option value="">Escolha</option>
+              <option value="Bolo de festa">Bolo de festa</option>
+              <option value="Docinhos">Docinhos</option>
+              <option value="Sobremesas">Sobremesas</option>
+              <option value="Kit festa">Kit festa</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-data">Data da festa</label>
+            <input id="f-data" name="data" type="date" required>
+          </div>
+          <div class="field">
+            <label for="f-qtd">Quantas pessoas?</label>
+            <input id="f-qtd" name="qtd" type="number" min="1" inputmode="numeric" placeholder="Ex.: 30" required>
+          </div>
+          <fieldset class="field field--full">
+            <legend>Como prefere receber?</legend>
+            <label><input type="radio" name="entrega" value="Retirada no ateliê" checked> Retirar no ateliê</label>
+            <label><input type="radio" name="entrega" value="Entrega em BH"> Entrega em BH</label>
+          </fieldset>
+          <div class="field field--full">
+            <label for="f-obs">Observações (opcional)</label>
+            <textarea id="f-obs" name="obs" rows="3" placeholder="Sabores, tema, restrições…"></textarea>
+          </div>
+          <p class="form-error field--full" id="f-erro" role="alert" aria-live="polite"></p>
+          <button class="btn btn--primary btn--lg" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre" aria-labelledby="t-sobre">
+      <div class="container about__grid">
+        <h2 id="t-sobre">Sobre o ateliê</h2>
+        <div>
+          <p>A Grão de Açúcar nasceu em 2019, numa cozinha em Santa Tereza. Até hoje cada bolo é feito à mão, em pequenas quantidades.</p>
+          <p>Usamos manteiga de verdade, chocolate 50% cacau e frutas da estação. Sem massa pronta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section class="section section--border" id="duvidas" aria-labelledby="t-duvidas">
+      <div class="container container--narrow">
+        <h2 id="t-duvidas">Dúvidas frequentes</h2>
+        <details>
+          <summary>Com quanta antecedência preciso pedir?</summary>
+          <p>Com pelo menos 3 dias. Para casamentos, recomendamos 30 dias.</p>
+        </details>
+        <details>
+          <summary>Vocês fazem entrega?</summary>
+          <p>Sim, em Belo Horizonte. A taxa depende do bairro.</p>
+        </details>
+        <details>
+          <summary>Quais as formas de pagamento?</summary>
+          <p>Pix ou cartão. O sinal de 50% reserva a data.</p>
+        </details>
+        <details>
+          <summary>Têm opções sem lactose ou sem glúten?</summary>
+          <p>Algumas sim. Fale no formulário e confirmamos o que é possível.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ONDE ESTAMOS -->
+    <section class="section section--rose" id="onde" aria-labelledby="t-onde">
+      <div class="container">
+        <h2 id="t-onde">Onde estamos</h2>
+        <p>Rua Mármore, 000 · Santa Tereza, Belo Horizonte · Retiradas de terça a sábado, das 10h às 18h.</p>
+        <figure class="map">
+          <iframe title="Mapa do ateliê Grão de Açúcar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Santa+Tereza,+Belo+Horizonte&output=embed"></iframe>
+          <figcaption>Atendimento apenas com hora marcada.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer" id="rodape">
+    <div class="container footer__inner">
+      <div>
+        <p class="brand">Grão de Açúcar</p>
+        <p class="footer__info">Confeitaria artesanal · Santa Tereza, BH · Instagram <a href="https://instagram.com/graodeacucar.bh" target="_blank" rel="noopener">@graodeacucar.bh</a></p>
+      </div>
+      <a class="btn btn--light" href="https://wa.me/5531995531324?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener" data-whatsapp>Falar no WhatsApp</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5531995531324?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener" data-whatsapp aria-label="Falar pelo WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.1c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.7-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.1.2-.2.3-.3.5-.1.2-.3.3-.4.5-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.7.8 2 .9.3.2.5.2.6.4.1.2.1.9-.1 1.6z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
